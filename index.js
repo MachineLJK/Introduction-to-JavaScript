@@ -17,8 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let votingAge = 18;
+if (votingAge >= 17) {
+console.log(true)
+}
 
 /*
 Task 1b - Values
@@ -30,7 +32,13 @@ Do the following:
 
    HINT: no function required
 */
+let numberone= 10;
+let numbertwo =11;
 
+if (numberone < numbertwo) {
+    numberone = 12;
+    console.log(numberone);
+}
 
 
 
@@ -45,6 +53,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let year = '1999'
+number("year");
+console.log(year);
 
 
 
@@ -58,11 +69,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b
   }
-
-
+  console.log(multiply(5,4));
+  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -201,8 +212,22 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if (score <= 100 && score >= 90) {
+    console.log("you got an A");
+  }
+  else if (score <= 89 && score >= 80) {
+    console.log("you got a B");
+  }
+  else if (score <= 79 && score >=70) {
+    console.log("you got a C");
+  }
+  else if (score <= 69 && score >= 60) {
+    console.log("you got a D");
+  }
+  else if (score <= 59) {
+    console.log("you got an F")
+  }
   }
   
   
